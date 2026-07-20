@@ -39,6 +39,58 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     window.addEventListener('scroll', revealDeferred, { passive: true });
 
-    // Removed nav highlight logic
+    // Smooth Accordion for Clubs
+    const accordions = document.querySelectorAll('.club-role-accordion');
 
-});
+    accordions.forEach(accordion => {
+        const summary = accordion.querySelector('summary');
+        const content = accordion.querySelector('.club-role-content');
+
+        if (!summary || !content) return;
+
+        let isAnimating = false;
+
+        summary.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (isAnimating) return;
+            
+            isAnimating = true;
+            
+            if (!accordion.open) {
+                accordion.open = true;
+                // Wait a tick for the browser to render the display: block
+                requestAnimationFrame(() => {
+                    const height = content.offsetHeight;
+                    
+                    const animation = content.animate([
+                        { height: '0px', opacity: 0, paddingBottom: '0px' },
+                        { height: `${height}px`, opacity: 1, paddingBottom: '1.2rem' }
+                    ], {
+                        duration: 350,
+                        easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                    });
+                    
+                    animation.onfinish = () => {
+                        isAnimating = false;
+                    };
+                });
+            } else {
+                const height = content.offsetHeight;
+                
+                const animation = content.animate([
+                    { height: `${height}px`, opacity: 1, paddingBottom: '1.2rem' },
+                    { height: '0px', opacity: 0, paddingBottom: '0px' }
+                ], {
+                    duration: 350,
+                    easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                });
+                
+                animation.onfinish = () => {
+                    accordion.open = false;
+                    isAnimating = false;
+                };
+            }
+        });
+    });
+
+});    // Removed nav highlight logic

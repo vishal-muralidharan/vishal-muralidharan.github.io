@@ -482,14 +482,15 @@ main {
     margin-bottom: 1rem;
 }
 
-.club-header h3 {
+.club-header h3,
+.club-organization {
     margin: 0;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-text);
 }
 
-.club-organization {
+.club-position {
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--color-text);
@@ -515,6 +516,86 @@ main {
 
 .experience-card p:not(.club-duration):not(.club-organization):not(.club-position):not(.experience-duration):last-child {
     margin-bottom: 0;
+}
+
+/* Accordion Component */
+.club-roles-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.club-role-accordion {
+    position: relative;
+}
+
+/* Timeline dot */
+.club-role-accordion::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 1.4rem;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--color-muted);
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: border-color var(--transition);
+}
+
+.club-role-accordion:hover::before,
+.club-role-accordion[open]::before {
+    border-color: var(--color-text);
+}
+
+/* Timeline vertical line */
+.club-role-accordion:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 1.4rem;
+    bottom: -1.4rem;
+    width: 2px;
+    background-color: var(--color-line);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.club-role-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+}
+
+.club-role-summary::-webkit-details-marker {
+    display: none;
+}
+
+.role-summary-left {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.role-accordion-icon {
+    font-size: 1rem;
+    color: var(--color-muted);
+    transition: transform 0.3s ease;
+}
+
+.club-role-accordion[open] .role-accordion-icon {
+    transform: rotate(-180deg);
+}
+
+.club-role-content {
+    padding: 0 0 1.2rem 0;
+    overflow: hidden; /* Added to ensure no overflow during JS animation */
 }
 
 /* Experience */
