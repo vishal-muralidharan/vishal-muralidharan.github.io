@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 accordion.open = true;
                 // Wait a tick for the browser to render the display: block
                 requestAnimationFrame(() => {
+                    content.style.overflow = 'hidden';
                     const height = content.offsetHeight;
                     
                     const animation = content.animate([
@@ -71,10 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                     
                     animation.onfinish = () => {
+                        content.style.overflow = '';
                         isAnimating = false;
                     };
                 });
             } else {
+                content.style.overflow = 'hidden';
                 const height = content.offsetHeight;
                 
                 const animation = content.animate([
@@ -87,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 animation.onfinish = () => {
                     accordion.open = false;
+                    content.style.overflow = '';
                     isAnimating = false;
                 };
             }

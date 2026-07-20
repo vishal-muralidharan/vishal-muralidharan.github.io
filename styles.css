@@ -538,7 +538,7 @@ main {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--color-bg);
     border: 2px solid var(--color-muted);
     transform: translateX(-50%);
     z-index: 2;
@@ -595,7 +595,6 @@ main {
 
 .club-role-content {
     padding: 0 0 1.2rem 0;
-    overflow: hidden; /* Added to ensure no overflow during JS animation */
 }
 
 /* Experience */
