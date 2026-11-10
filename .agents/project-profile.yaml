@@ -1,0 +1,64 @@
+schema_version: 2
+project:
+  name: portfolio
+  mode: existing
+  platforms:
+  - web
+  summary: Personal developer portfolio and project showcase static website.
+stack:
+  language: javascript
+  framework: vanilla
+  styling: css
+  package_manager: none
+design:
+  enabled: true
+  tokens_file: styles.css
+  component_dirs: []
+responsive:
+  enabled: false
+commands:
+  check: 'true'
+structure:
+  layers:
+  - path: .
+    purpose: Root static website files
+  root_allowed:
+  - index.html
+  - script.js
+  - styles.css
+  tests: colocated
+naming:
+- item: Scripts
+  style: lowercase
+  example: script.js
+git:
+  push: never
+  commit_format: '<type>(<scope>): <subject>'
+  scopes:
+  - name: agents
+    paths:
+    - .agents/**
+    - AGENTS.md
+    purpose: Build Forge pipeline and agent configuration
+  - name: styles
+    paths:
+    - styles.css
+    purpose: CSS styling and variables
+  - name: content
+    paths:
+    - index.html
+    - script.js
+    purpose: Website markup and interactions
+docs:
+  skills_dir: .agents/skills
+  repo_map: index.html
+  agents_file: AGENTS.md
+blueprints:
+  dir: .agents/blueprints
+  enabled: true
+  areas:
+  - ui
+  - data
+  - tokens
+  - layout
+rules: []
