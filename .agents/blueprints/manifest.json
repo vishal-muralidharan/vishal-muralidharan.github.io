@@ -1,0 +1,23 @@
+{
+  "analyzers": [
+    "auth",
+    "config",
+    "data",
+    "layout",
+    "tokens",
+    "ui"
+  ],
+  "areas": {
+    "config": {},
+    "data": {},
+    "layout": {
+      "index.html": "9701c870ea5e59f8008f14188dd0d878e39080bf177432ef5bcd21acaa209c53",
+      "styles.css": "97fa784484b0878cff3d9174c81a8647beed58d09a981a99ff657bae5207f368"
+    },
+    "tokens": {
+      "styles.css": "97fa784484b0878cff3d9174c81a8647beed58d09a981a99ff657bae5207f368"
+    },
+    "ui": {}
+  },
+  "generator_version": "0.2.0"
+}
