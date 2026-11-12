@@ -2,7 +2,7 @@
 name: build-ui
 description: 'Use this skill whenever you build or change any UI in portfolio: screens, components, sheets, charts, copy. Covers shared components, tokens, required states, motion and accessibility.'
 ---
-<!-- build-forge:generated v1 body=2cc45802a4a1f981c3dc62ad4b5731b0c7746a0d3a29e90b51a87cf11b3d6114 -->
+<!-- build-forge:generated v1 body=d1669bd92de337c563822ccc376361a74ef326dcd67ee44d26e5ca962631e182 -->
 
 <!-- Generated from .agents/project-profile.yaml by project-bootstrap. Edit the profile, then re-render. -->
 
@@ -26,7 +26,14 @@ Query codebase UI facts on demand:
 
 ## Rules
 
-- No UI rules recorded. Add them to the profile.
+- Use semantic HTML elements instead of generic divs with click handlers. `[a11y-semantic-html]`
+- Interactive elements must display high-contrast visible focus indicators. `[a11y-visible-focus]`
+- Text and interactive controls must meet WCAG AA contrast standards. `[a11y-aa-contrast]`
+- Icon-only controls must provide an accessible text label. `[a11y-icon-button-labels]`
+- Image tags must include an alt attribute on the same tag line. (enforced by test) `[a11y-img-has-alt]`
+- Transitions and animations must respect prefers-reduced-motion media queries. `[motion-respect-reduced]`
+- Smooth animations must target transform and opacity properties only. `[motion-transform-opacity-only]`
+- Never use transition: all in stylesheets; target explicit CSS properties instead. (enforced by test) `[motion-no-transition-all]`
 
 ## Finish
 

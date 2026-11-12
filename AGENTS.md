@@ -1,4 +1,4 @@
-<!-- build-forge:generated v1 body=3815ba343d782ec3f36e9d72b38db7964788bc87a2a5771494421bfbfb5138a5 -->
+<!-- build-forge:generated v1 body=74943d038a75856f97df52f90dd6588bfdeb782eef2f952a709d9cfa5b92ef33 -->
 <!-- Generated from .agents/project-profile.yaml by project-bootstrap. Edit the profile, then re-render. -->
 
 # Agent Guidelines for portfolio
@@ -32,6 +32,18 @@ Read the skill listed for each area before you touch it. Skills live in `.agents
 5. Commit.
 6. Sync docs and the repo map.
 7. Report open questions and known issues.
+
+## Standard rules
+
+- Never read transcripts, logs or history files of earlier agent sessions. Treat them as private. Ask the user instead.
+
+## Project rules
+
+- Never ship console.log or console.debug calls in production source code. (enforced by test) `[web-no-console]`
+- Links targeting blank must include rel with noopener or noreferrer on the same tag line. (enforced by test) `[web-target-blank-rel]`
+- Never use eval() or equivalent dynamic script execution without a listed exception. (enforced by test) `[web-no-raw-eval]`
+- Never assign to innerHTML or use dangerouslySetInnerHTML without a listed exception. (enforced by test) `[web-no-inner-html]`
+- Never commit .env files containing local configurations or secrets. (enforced by test) `[web-no-committed-env]`
 
 ## Commands
 
