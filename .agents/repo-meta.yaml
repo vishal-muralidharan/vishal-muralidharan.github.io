@@ -1,4 +1,9 @@
 style: minimal
-description: ''
-homepage: ''
-topics: []
+description: Personal portfolio website built with plain HTML, CSS and JavaScript.
+homepage: https://vishal-muralidharan.github.io
+topics:
+- html
+- css
+- javascript
+- github-pages
+- portfolio
