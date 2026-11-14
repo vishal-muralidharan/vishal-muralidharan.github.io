@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "generated_by": "GodFather",
+  "projects": [
+    {
+      "title": "Humane (AI Text Humanizer)",
+      "tagline": "Humane is a specialized web application built with React and Vercel, engineered to bypass strict enterprise AI detectors by...",
+      "description": "Utilized Grok API and advanced prompt engineering techniques (Chain-of-Thought, Meta-Cognition, Dual Persona Adversarial) to transform AI-generated text by injecting high perplexity and burstiness, bypassing AI detection. Integrated three contextual transformation modes to vary output tone, alongside a secure admin data workbench featuring human-in-the-loop rating, a diff viewer, and AI detection scoring for future dataset curation.",
+      "status": "active",
+      "stack": [
+        "React",
+        "Node.js",
+        "Firebase",
+        "Grok API"
+      ],
+      "tags": [],
+      "features": [],
+      "links": {
+        "live": "",
+        "repo": ""
+      },
+      "screenshots": []
+    },
+    {
+      "title": "TeNo",
+      "tagline": "Website version of the TeNo side-panel extension for links, reminders, cart items, and timers.",
+      "description": "Developed a keyboard-first productivity command center operating as both a standalone web application and a browser extension. Designed a terminal-inspired, multi-tab interface for seamlessly managing saved links, e-commerce carts, and daily reminders with real-time cloud synchronization. Engineered advanced functionalities including rapid keyboard-shortcut navigation, secure user authentication, and a robust background timer that reliably triggers desktop notifications.",
+      "status": "active",
+      "stack": [
+        "React.js",
+        "Vite",
+        "Firebase",
+        "Manifest V3"
+      ],
+      "tags": [],
+      "features": [
+        "Dual Theme System - Learn about the Minimalist vs Modern styling architecture.",
+        "Collaboration & Sharing - Discover the unified label architecture and role-based access control (RBAC).",
+        "Core Modules - Understand the primary functional tabs: Links, Cart, Reminders, Timer, and Prompts.",
+        "Settings & Compliance - Details on data export (GDPR/DPDP) and server-side account deletion."
+      ],
+      "links": {
+        "live": "https://te-no.vercel.app",
+        "repo": "https://github.com/vishal-muralidharan/TeNo"
+      },
+      "screenshots": []
+    },
+    {
+      "title": "BitHab (Personal Productivity Web App)",
+      "tagline": "BitHab helps build sustainable habits via a lightweight, client-side dashboard.",
+      "description": "Designed a responsive three-column layout with dual themes and an interactive multi-calendar system. Enabled nested sub-activities, custom goals, automatic streak tracking and note-making features.",
+      "status": "active",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Firebase"
+      ],
+      "tags": [
+        "habit-tracker"
+      ],
+      "features": [
+        "Dashboard: Fixed viewport 3-column layout on desktop, interactive calendar with activity name header, centered weekday columns, clickable date header...",
+        "Activities & Scheduling: Hierarchical activities and sub-activities with customizable color palettes and monthly scheduling calendar.",
+        "Goals Tracking: Main goals with subgoals, completion percentage tracking, and legacy schema normalization.",
+        "Reminders: Scheduled time-based reminders with quick date selectors, datetime picker modal, active status detection, and modal editing.",
+        "Notes System: Daily notes and general thought capture with inline markdown-friendly text editor, favorites filter, and multi-source synchronization across...",
+        "Flexible Lists: Checklists, todo lists, numbered lists, and bulleted lists.",
+        "Focus & Deep Focus: Digital clock with motivational quotes, task management, countdown session timer, and focus analytics.",
+        "Multi-Theme Gallery: 6 themes (oceanic-depths, evergreen-forest, cyberpunk-neon, monochrome-minimalist, sunrise-coral, cherry-blossom) with seamless Dark..."
+      ],
+      "links": {
+        "live": "https://bithab.netlify.app/",
+        "repo": "https://github.com/vishal-muralidharan/BitHab"
+      },
+      "screenshots": []
+    },
+    {
+      "title": "Classic Arcade Game Pac-Man Remake",
+      "tagline": "Utilized Breadth-First Search algorithm to calculate shortest path between ghosts and player.",
+      "description": "Utilized Breadth-First Search algorithm to calculate shortest path between ghosts and player. Integrated Scatter Mode and Frightened Mode with multiple difficulty levels, adjustable ghost speed, and bonus life rewards.",
+      "status": "active",
+      "stack": [
+        "C",
+        "RAYLIB"
+      ],
+      "tags": [],
+      "features": [],
+      "links": {
+        "live": "",
+        "repo": "https://github.com/vishal-muralidharan/PACMAN-using-C-and-RAYLIB"
+      },
+      "screenshots": []
+    },
+    {
+      "title": "Online Banking System",
+      "tagline": "Featuring user account management, balance inquiries, fund transfers, and transaction history tracking with Java Swing user interface.",
+      "description": "Featuring user account management, balance inquiries, fund transfers, and transaction history tracking with Java Swing user interface.",
+      "status": "active",
+      "stack": [
+        "Java",
+        "Java Swing",
+        "MySQL"
+      ],
+      "tags": [],
+      "features": [],
+      "links": {
+        "live": "",
+        "repo": "https://github.com/vishal-muralidharan/Online-banking-system"
+      },
+      "screenshots": []
+    },
+    {
+      "title": "Tsuro",
+      "tagline": "A digital adaptation of the strategic board game Tsuro.",
+      "description": "A digital adaptation of the strategic board game Tsuro. Supports 2-8 local players in a turn-based, tile-laying game where the objective is to be the last player on the board.",
+      "status": "active",
+      "stack": [
+        "Python",
+        "Arcade"
+      ],
+      "tags": [],
+      "features": [],
+      "links": {
+        "live": "",
+        "repo": "https://github.com/vishal-muralidharan/Tsuro"
+      },
+      "screenshots": []
+    },
+    {
+      "title": "Library Management Software",
+      "tagline": "Implemented book management, borrowing and lending processes with overdue tracking and borrowing history.",
+      "description": "Implemented book management, borrowing and lending processes with overdue tracking and borrowing history. Currently in use at Vanshi Manthan Vidyashram, Chennai.",
+      "status": "active",
+      "stack": [
+        "VBA",
+        "MS Access"
+      ],
+      "tags": [],
+      "features": [],
+      "links": {
+        "live": "",
+        "repo": ""
+      },
+      "screenshots": []
+    }
+  ]
+}
