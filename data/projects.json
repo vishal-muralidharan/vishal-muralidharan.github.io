@@ -4,7 +4,7 @@
   "projects": [
     {
       "title": "Humane (AI Text Humanizer)",
-      "tagline": "Humane is a specialized web application built with React and Vercel, engineered to bypass strict enterprise AI detectors by...",
+      "tagline": "Utilized Grok API and advanced prompt engineering techniques (Chain-of-Thought, Meta-Cognition, Dual Persona Adversarial) to transform...",
       "description": "Utilized Grok API and advanced prompt engineering techniques (Chain-of-Thought, Meta-Cognition, Dual Persona Adversarial) to transform AI-generated text by injecting high perplexity and burstiness, bypassing AI detection. Integrated three contextual transformation modes to vary output tone, alongside a secure admin data workbench featuring human-in-the-loop rating, a diff viewer, and AI detection scoring for future dataset curation.",
       "status": "active",
       "stack": [
