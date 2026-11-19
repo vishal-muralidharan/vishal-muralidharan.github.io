@@ -22,10 +22,13 @@ structure:
   layers:
   - path: .
     purpose: Root static website files
+  - path: data
+    purpose: JSON data sources
   root_allowed:
   - index.html
   - script.js
   - styles.css
+  - _config.yml
   tests: colocated
 naming:
 - item: Scripts
@@ -49,6 +52,10 @@ git:
     - index.html
     - script.js
     purpose: Website markup and interactions
+  - name: data
+    paths:
+    - data/**
+    purpose: JSON data sources and project listings
 docs:
   skills_dir: .agents/skills
   repo_map: index.html
