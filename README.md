@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal developer portfolio website showcasing fullstack web applications, tools, and projects.
+Personal developer portfolio website showcasing software engineering projects and technical work, built with vanilla HTML, CSS, and JS.
 
 Live site: https://vishal-muralidharan.github.io
 
@@ -8,17 +8,18 @@ Live site: https://vishal-muralidharan.github.io
 
 Edit `index.html`, `styles.css`, or `script.js` directly.
 
-To view locally:
-1. Start any local static file server:
-   ```bash
-   python3 -m http.server 8000
-   ```
-2. Open `http://localhost:8000` in your browser, or open `index.html` directly.
+To run locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000` in your browser.
 
 ## Deployment
 
-The site is hosted on GitHub Pages. Changes pushed to the `main` branch deploy automatically.
+The site deploys automatically to GitHub Pages on every push to the `main` branch.
 
 ## License
 
-MIT License. Copyright (c) 2025 Vishal Muralidharan.
+Distributed under the MIT License.
