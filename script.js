@@ -97,4 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-});    // Removed nav highlight logic
+    // Dynamic year in footer
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+});
