@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vishal-muralidharan.github.io/sitemap.xml
