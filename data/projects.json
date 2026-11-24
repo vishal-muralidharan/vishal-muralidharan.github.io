@@ -34,10 +34,13 @@
       ],
       "tags": [],
       "features": [
-        "Dual Theme System - Learn about the Minimalist vs Modern styling architecture.",
-        "Collaboration & Sharing - Discover the unified label architecture and role-based access control (RBAC).",
-        "Core Modules - Understand the primary functional tabs: Links, Cart, Reminders, Timer, and Prompts.",
-        "Settings & Compliance - Details on data export (GDPR/DPDP) and server-side account deletion."
+        "Multi-tab command center organizes bookmarks, reading cart items, daily reminders, timers, and prompt templates in one interface.",
+        "Dual-theme design engine switches between high-contrast Minimalist and modern visual styling modes with zero layout shift.",
+        "⌨ Keyboard-first navigation enables complete application traversal, modal actions, and quick searches via keyboard shortcuts.",
+        "Version-controlled prompt vault saves, edits, versions, and searches AI prompt templates with custom tags.",
+        "⏰ Background notification timers trigger native desktop alerts for task reminders and deep work sessions.",
+        "Real-time cloud synchronization keeps links, carts, and prompts instantly synchronized across the web app and Chrome extension.",
+        "DPDP and GDPR data sovereign supports instant self-service JSON data exports and permanent account deletion."
       ],
       "links": {
         "live": "https://te-no.vercel.app",
@@ -47,7 +50,7 @@
     },
     {
       "title": "BitHab (Personal Productivity Web App)",
-      "tagline": "BitHab helps build sustainable habits via a lightweight, client-side dashboard.",
+      "tagline": "Personal habit and productivity tracker with multi-calendar scheduling, custom goals, focus timers, and habit analytics.",
       "description": "Designed a responsive three-column layout with dual themes and an interactive multi-calendar system. Enabled nested sub-activities, custom goals, automatic streak tracking and note-making features.",
       "status": "active",
       "stack": [
@@ -60,14 +63,13 @@
         "habit-tracker"
       ],
       "features": [
-        "Dashboard: Fixed viewport 3-column layout on desktop, interactive calendar with activity name header, centered weekday columns, clickable date header...",
-        "Activities & Scheduling: Hierarchical activities and sub-activities with customizable color palettes and monthly scheduling calendar.",
-        "Goals Tracking: Main goals with subgoals, completion percentage tracking, and legacy schema normalization.",
-        "Reminders: Scheduled time-based reminders with quick date selectors, datetime picker modal, active status detection, and modal editing.",
-        "Notes System: Daily notes and general thought capture with inline markdown-friendly text editor, favorites filter, and multi-source synchronization across...",
-        "Flexible Lists: Checklists, todo lists, numbered lists, and bulleted lists.",
-        "Focus & Deep Focus: Digital clock with motivational quotes, task management, countdown session timer, and focus analytics.",
-        "Multi-Theme Gallery: 6 themes (oceanic-depths, evergreen-forest, cyberpunk-neon, monochrome-minimalist, sunrise-coral, cherry-blossom) with seamless Dark..."
+        "3-column dashboard combines a multi-calendar scheduler, daily notes editor, and active goals in one unified view.",
+        "Hierarchical goal tracking breaks ambitions into subgoals with visual progress bars and milestone indicators.",
+        "⏰ Timely reminders notify you of scheduled events with custom dates, recurring intervals, and instant editing modals.",
+        "Markdown daily notes provide fast note taking with search and instant tagging for quick retrieval.",
+        "⏱ Deep focus sessions offer customizable countdown timers, fullscreen mode, and detailed productivity logs.",
+        "6 adaptive themes support light and dark modes with customizable color palettes.",
+        "DPDP-compliant data rights guarantee complete data ownership with single-click JSON export and permanent account deletion."
       ],
       "links": {
         "live": "https://bithab.netlify.app/",
