@@ -4,7 +4,7 @@ Personal developer portfolio website showcasing software engineering projects an
 
 Live site: https://vishal-muralidharan.github.io
 
-## Local Development
+## Run and Edit Locally
 
 Edit `index.html`, `styles.css`, or `script.js` directly.
 
